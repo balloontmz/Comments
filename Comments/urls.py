@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from message.views import getform
 
+# 此版本Django取消了正则匹配？
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('form/', getform, name="form_new")

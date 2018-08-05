@@ -14,7 +14,7 @@
     </h1>
     <label>
         <span>姓名 :</span>
-        <input id="name" type="text" name="name"  value="{{ my_message.name }}" class="error" placeholder="请输入您的姓名"/>
+        <input id="name" type="text" name="name"  value="{% ifequal my_message.name|slice:'3' 'tomtiddler'|slice:'3' %}我了w擦{%  else %}没找到{% endifequal %}" class="error" placeholder="请输入您的姓名"/>
         <div class="error-msg"></div>
     </label>
 

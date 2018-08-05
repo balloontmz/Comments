@@ -39,3 +39,7 @@ django的安全机制，post页面需要加入crsf验证    {% csrf_token %}
 url 别名
 在 urls.py 中设置 name属性，此时，在前端中调用就可采用action=“{{ url name }}”的方式，修改路由后不需要再更改前端中的值
 Django 关于 templete的配置
+{% ifequal a b %}{% endifequal %} 相当于 {% if a = b %}{% endif %}
+可切片： {% ifequal a|slice:'x' b|slice:'x' %}
+
+
